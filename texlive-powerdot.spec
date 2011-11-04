@@ -1,3 +1,9 @@
+# revision 24021
+# category Package
+# catalog-ctan /macros/latex/contrib/powerdot
+# catalog-date 2011-05-17 19:45:31 +0200
+# catalog-license lppl1.3
+# catalog-version 1.4h
 Name:		texlive-powerdot
 Version:	1.4h
 Release:	1
@@ -86,6 +92,7 @@ develop new styles. A LyX layout file is provided.
 %doc %{_texmfdistdir}/doc/latex/powerdot/powerdotSlide.tex
 #- source
 %doc %{_texmfdistdir}/source/latex/powerdot/powerdot.dtx
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -96,3 +103,5 @@ develop new styles. A LyX layout file is provided.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}

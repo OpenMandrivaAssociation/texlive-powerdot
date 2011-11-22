@@ -1,12 +1,12 @@
-# revision 24021
+# revision 24587
 # category Package
 # catalog-ctan /macros/latex/contrib/powerdot
-# catalog-date 2011-05-17 19:45:31 +0200
+# catalog-date 2011-11-13 08:18:31 +0100
 # catalog-license lppl1.3
 # catalog-version 1.4h
 Name:		texlive-powerdot
 Version:	1.4h
-Release:	1
+Release:	2
 Summary:	A presentation class
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/powerdot
@@ -73,6 +73,8 @@ develop new styles. A LyX layout file is provided.
 %doc %{_texmfdistdir}/doc/latex/powerdot/RunExamples
 %doc %{_texmfdistdir}/doc/latex/powerdot/RunSlideDoc
 %doc %{_texmfdistdir}/doc/latex/powerdot/manifest.txt
+%doc %{_texmfdistdir}/doc/latex/powerdot/powerdot-de.pdf
+%doc %{_texmfdistdir}/doc/latex/powerdot/powerdot-de.tex
 %doc %{_texmfdistdir}/doc/latex/powerdot/powerdot-example.lyx
 %doc %{_texmfdistdir}/doc/latex/powerdot/powerdot-example.tex
 %doc %{_texmfdistdir}/doc/latex/powerdot/powerdot-example1.pdf
@@ -87,8 +89,6 @@ develop new styles. A LyX layout file is provided.
 %doc %{_texmfdistdir}/doc/latex/powerdot/powerdot.layout
 %doc %{_texmfdistdir}/doc/latex/powerdot/powerdot.pdf
 %doc %{_texmfdistdir}/doc/latex/powerdot/powerdot.tex
-%doc %{_texmfdistdir}/doc/latex/powerdot/powerdotDE.pdf
-%doc %{_texmfdistdir}/doc/latex/powerdot/powerdotDE.tex
 %doc %{_texmfdistdir}/doc/latex/powerdot/powerdotSlide.pdf
 %doc %{_texmfdistdir}/doc/latex/powerdot/powerdotSlide.tex
 #- source

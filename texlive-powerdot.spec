@@ -1,12 +1,12 @@
-# revision 24587
+# revision 25656
 # category Package
 # catalog-ctan /macros/latex/contrib/powerdot
-# catalog-date 2011-11-13 08:18:31 +0100
+# catalog-date 2012-03-13 22:44:46 +0100
 # catalog-license lppl1.3
-# catalog-version 1.4h
+# catalog-version 1.4i
 Name:		texlive-powerdot
-Version:	1.4h
-Release:	3
+Version:	1.4i
+Release:	1
 Summary:	A presentation class
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/powerdot
@@ -54,6 +54,7 @@ develop new styles. A LyX layout file is provided.
 %{_texmfdistdir}/tex/latex/powerdot/powerdot-pazik.sty
 %{_texmfdistdir}/tex/latex/powerdot/powerdot-sailor.sty
 %{_texmfdistdir}/tex/latex/powerdot/powerdot-simple.sty
+%{_texmfdistdir}/tex/latex/powerdot/powerdot-tiger.sty
 %{_texmfdistdir}/tex/latex/powerdot/powerdot-tycja.sty
 %{_texmfdistdir}/tex/latex/powerdot/powerdot-upen.sty
 %{_texmfdistdir}/tex/latex/powerdot/powerdot.cls
@@ -62,9 +63,16 @@ develop new styles. A LyX layout file is provided.
 %doc %{_texmfdistdir}/doc/latex/powerdot/RunDoc
 %doc %{_texmfdistdir}/doc/latex/powerdot/RunExamples
 %doc %{_texmfdistdir}/doc/latex/powerdot/RunSlideDoc
+%doc %{_texmfdistdir}/doc/latex/powerdot/clemson.eps
 %doc %{_texmfdistdir}/doc/latex/powerdot/manifest.txt
-%doc %{_texmfdistdir}/doc/latex/powerdot/powerdot-de.pdf
-%doc %{_texmfdistdir}/doc/latex/powerdot/powerdot-de.tex
+%doc %{_texmfdistdir}/doc/latex/powerdot/pawmkorange.eps
+%doc %{_texmfdistdir}/doc/latex/powerdot/pawmkorange.png
+%doc %{_texmfdistdir}/doc/latex/powerdot/pawmkpurple.eps
+%doc %{_texmfdistdir}/doc/latex/powerdot/pawmkpurple.png
+%doc %{_texmfdistdir}/doc/latex/powerdot/pawtraceorange.eps
+%doc %{_texmfdistdir}/doc/latex/powerdot/pawtraceorange.png
+%doc %{_texmfdistdir}/doc/latex/powerdot/pawtracep.eps
+%doc %{_texmfdistdir}/doc/latex/powerdot/pawtracep.png
 %doc %{_texmfdistdir}/doc/latex/powerdot/powerdot-example.lyx
 %doc %{_texmfdistdir}/doc/latex/powerdot/powerdot-example.tex
 %doc %{_texmfdistdir}/doc/latex/powerdot/powerdot-example1.pdf
@@ -79,6 +87,8 @@ develop new styles. A LyX layout file is provided.
 %doc %{_texmfdistdir}/doc/latex/powerdot/powerdot.layout
 %doc %{_texmfdistdir}/doc/latex/powerdot/powerdot.pdf
 %doc %{_texmfdistdir}/doc/latex/powerdot/powerdot.tex
+%doc %{_texmfdistdir}/doc/latex/powerdot/powerdotDE.pdf
+%doc %{_texmfdistdir}/doc/latex/powerdot/powerdotDE.tex
 %doc %{_texmfdistdir}/doc/latex/powerdot/powerdotSlide.pdf
 %doc %{_texmfdistdir}/doc/latex/powerdot/powerdotSlide.tex
 #- source

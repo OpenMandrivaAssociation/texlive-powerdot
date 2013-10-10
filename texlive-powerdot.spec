@@ -1,19 +1,18 @@
-# revision 25656
+# revision 31446
 # category Package
 # catalog-ctan /macros/latex/contrib/powerdot
-# catalog-date 2012-03-13 22:44:46 +0100
+# catalog-date 2013-07-04 18:59:59 +0200
 # catalog-license lppl1.3
 # catalog-version 1.4i
 Name:		texlive-powerdot
 Version:	1.4i
-Release:	1
+Release:	2
 Summary:	A presentation class
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/powerdot
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/powerdot.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/powerdot.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/powerdot.source.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -38,10 +37,19 @@ develop new styles. A LyX layout file is provided.
 
 #-----------------------------------------------------------------------
 %files
+%{_texmfdistdir}/tex/latex/powerdot/images/clemson.eps
+%{_texmfdistdir}/tex/latex/powerdot/images/pawmkorange.eps
+%{_texmfdistdir}/tex/latex/powerdot/images/pawmkorange.png
+%{_texmfdistdir}/tex/latex/powerdot/images/pawmkpurple.eps
+%{_texmfdistdir}/tex/latex/powerdot/images/pawmkpurple.png
+%{_texmfdistdir}/tex/latex/powerdot/images/pawtraceorange.eps
+%{_texmfdistdir}/tex/latex/powerdot/images/pawtraceorange.png
+%{_texmfdistdir}/tex/latex/powerdot/images/pawtracep.eps
+%{_texmfdistdir}/tex/latex/powerdot/images/pawtracep.png
+%{_texmfdistdir}/tex/latex/powerdot/images/powerdot-default.ps
 %{_texmfdistdir}/tex/latex/powerdot/powerdot-aggie.sty
 %{_texmfdistdir}/tex/latex/powerdot/powerdot-bframe.sty
 %{_texmfdistdir}/tex/latex/powerdot/powerdot-ciment.sty
-%{_texmfdistdir}/tex/latex/powerdot/powerdot-default.ps
 %{_texmfdistdir}/tex/latex/powerdot/powerdot-default.sty
 %{_texmfdistdir}/tex/latex/powerdot/powerdot-elcolors.sty
 %{_texmfdistdir}/tex/latex/powerdot/powerdot-fyma.sty
@@ -60,46 +68,35 @@ develop new styles. A LyX layout file is provided.
 %{_texmfdistdir}/tex/latex/powerdot/powerdot.cls
 %doc %{_texmfdistdir}/doc/latex/powerdot/Changes
 %doc %{_texmfdistdir}/doc/latex/powerdot/README
-%doc %{_texmfdistdir}/doc/latex/powerdot/RunDoc
-%doc %{_texmfdistdir}/doc/latex/powerdot/RunExamples
-%doc %{_texmfdistdir}/doc/latex/powerdot/RunSlideDoc
-%doc %{_texmfdistdir}/doc/latex/powerdot/clemson.eps
-%doc %{_texmfdistdir}/doc/latex/powerdot/manifest.txt
-%doc %{_texmfdistdir}/doc/latex/powerdot/pawmkorange.eps
-%doc %{_texmfdistdir}/doc/latex/powerdot/pawmkorange.png
-%doc %{_texmfdistdir}/doc/latex/powerdot/pawmkpurple.eps
-%doc %{_texmfdistdir}/doc/latex/powerdot/pawmkpurple.png
-%doc %{_texmfdistdir}/doc/latex/powerdot/pawtraceorange.eps
-%doc %{_texmfdistdir}/doc/latex/powerdot/pawtraceorange.png
-%doc %{_texmfdistdir}/doc/latex/powerdot/pawtracep.eps
-%doc %{_texmfdistdir}/doc/latex/powerdot/pawtracep.png
-%doc %{_texmfdistdir}/doc/latex/powerdot/powerdot-example.lyx
-%doc %{_texmfdistdir}/doc/latex/powerdot/powerdot-example.tex
-%doc %{_texmfdistdir}/doc/latex/powerdot/powerdot-example1.pdf
-%doc %{_texmfdistdir}/doc/latex/powerdot/powerdot-example1.tex
-%doc %{_texmfdistdir}/doc/latex/powerdot/powerdot-example2.pdf
-%doc %{_texmfdistdir}/doc/latex/powerdot/powerdot-example2.tex
-%doc %{_texmfdistdir}/doc/latex/powerdot/powerdot-example3.pdf
-%doc %{_texmfdistdir}/doc/latex/powerdot/powerdot-example3.tex
-%doc %{_texmfdistdir}/doc/latex/powerdot/powerdot-styleexample.tex
-%doc %{_texmfdistdir}/doc/latex/powerdot/powerdot-styletest.tex
-%doc %{_texmfdistdir}/doc/latex/powerdot/powerdot.bib
-%doc %{_texmfdistdir}/doc/latex/powerdot/powerdot.layout
-%doc %{_texmfdistdir}/doc/latex/powerdot/powerdot.pdf
-%doc %{_texmfdistdir}/doc/latex/powerdot/powerdot.tex
-%doc %{_texmfdistdir}/doc/latex/powerdot/powerdotDE.pdf
-%doc %{_texmfdistdir}/doc/latex/powerdot/powerdotDE.tex
-%doc %{_texmfdistdir}/doc/latex/powerdot/powerdotSlide.pdf
-%doc %{_texmfdistdir}/doc/latex/powerdot/powerdotSlide.tex
-#- source
-%doc %{_texmfdistdir}/source/latex/powerdot/powerdot.dtx
+%doc %{_texmfdistdir}/doc/latex/powerdot/docs/RunDoc
+%doc %{_texmfdistdir}/doc/latex/powerdot/docs/RunExamples
+%doc %{_texmfdistdir}/doc/latex/powerdot/docs/RunSlideDoc
+%doc %{_texmfdistdir}/doc/latex/powerdot/docs/manifest.txt
+%doc %{_texmfdistdir}/doc/latex/powerdot/docs/powerdot-example1.pdf
+%doc %{_texmfdistdir}/doc/latex/powerdot/docs/powerdot-example1.tex
+%doc %{_texmfdistdir}/doc/latex/powerdot/docs/powerdot-example2.pdf
+%doc %{_texmfdistdir}/doc/latex/powerdot/docs/powerdot-example2.tex
+%doc %{_texmfdistdir}/doc/latex/powerdot/docs/powerdot-example3.pdf
+%doc %{_texmfdistdir}/doc/latex/powerdot/docs/powerdot-example3.tex
+%doc %{_texmfdistdir}/doc/latex/powerdot/docs/powerdot-styleexample.tex
+%doc %{_texmfdistdir}/doc/latex/powerdot/docs/powerdot-styletest.tex
+%doc %{_texmfdistdir}/doc/latex/powerdot/docs/powerdot.bib
+%doc %{_texmfdistdir}/doc/latex/powerdot/docs/powerdot.pdf
+%doc %{_texmfdistdir}/doc/latex/powerdot/docs/powerdot.tex
+%doc %{_texmfdistdir}/doc/latex/powerdot/docs/powerdotDE.pdf
+%doc %{_texmfdistdir}/doc/latex/powerdot/docs/powerdotDE.tex
+%doc %{_texmfdistdir}/doc/latex/powerdot/docs/powerdotSlide.pdf
+%doc %{_texmfdistdir}/doc/latex/powerdot/docs/powerdotSlide.tex
+%doc %{_texmfdistdir}/doc/latex/powerdot/lyx/powerdot-example.lyx
+%doc %{_texmfdistdir}/doc/latex/powerdot/lyx/powerdot-example.tex
+%doc %{_texmfdistdir}/doc/latex/powerdot/lyx/powerdot.layout
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a0 -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+cp -fpar tex doc %{buildroot}%{_texmfdistdir}

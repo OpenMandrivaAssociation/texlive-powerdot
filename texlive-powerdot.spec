@@ -6,7 +6,7 @@
 # catalog-version 1.4i
 Name:		texlive-powerdot
 Version:	1.4i
-Release:	5
+Release:	6
 Summary:	A presentation class
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/powerdot

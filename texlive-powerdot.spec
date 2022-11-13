@@ -1,19 +1,13 @@
-# revision 32549
-# category Package
-# catalog-ctan /macros/latex/contrib/powerdot
-# catalog-date 2014-01-02 07:32:11 +0100
-# catalog-license lppl1.3
-# catalog-version 1.5
 Name:		texlive-powerdot
-Version:	1.5c
-Release:	2
+Version:	59272
+Release:	1
 Summary:	A presentation class
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/powerdot
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/powerdot.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/powerdot.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/powerdot.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/powerdot.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/powerdot.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/powerdot.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -29,12 +23,12 @@ can be used. A powerful template system is available to easily
 develop new styles. A LyX layout file is provided.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -77,7 +71,8 @@ develop new styles. A LyX layout file is provided.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
